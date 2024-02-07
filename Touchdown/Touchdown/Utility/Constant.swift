@@ -19,6 +19,12 @@ let colorBackground: Color = Color("ColorBackground")
 let colorGray: Color = Color(UIColor.systemGray4)
 
 // MARK: - LAYOUT
+let collumnSpacing: CGFloat = 10
+let rowSpacing: CGFloat = 10
+var gridLayout: [GridItem] {
+    return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
+}
+
 // MARK: - UX
 // MARK: - API
 // MARK: - IMAGE

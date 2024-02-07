@@ -23,10 +23,17 @@ struct ContentView: View {
                         .background(.white)
                         .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(0.05), radius: 5 , x: 0, y: 5)
                     
-                    Spacer()
-                    
-                    FooterView()
-                        .padding()
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(spacing: 0) {
+                            ImageSliderView(players: players)
+                                .padding(.vertical, 10)
+                            
+                            CategoryGridView(categories: categories)
+                            
+                            FooterView()
+                                .padding()
+                        }// - VStack
+                    }// - Scrool
                 }// - VSTACK
                 .background(colorBackground.ignoresSafeArea(.all, edges: .all))
             }// - ZSTACK

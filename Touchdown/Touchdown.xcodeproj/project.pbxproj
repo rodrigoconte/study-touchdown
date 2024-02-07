@@ -15,6 +15,10 @@
 		AA100C2A2B72FF00007850F1 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100C292B72FF00007850F1 /* CategoryModel.swift */; };
 		AA100C2C2B72FFC6007850F1 /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100C2B2B72FFC6007850F1 /* BrandModel.swift */; };
 		AA100C2E2B73003A007850F1 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100C2D2B73003A007850F1 /* ProductModel.swift */; };
+		AA100C302B7301B0007850F1 /* ImageSliderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100C2F2B7301B0007850F1 /* ImageSliderItemView.swift */; };
+		AA100C322B73065D007850F1 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100C312B73065D007850F1 /* CategoryItemView.swift */; };
+		AA100C342B730821007850F1 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100C332B730821007850F1 /* CategoryGridView.swift */; };
+		AA100C372B730A50007850F1 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100C362B730A50007850F1 /* SectionView.swift */; };
 		AA85AF3B2B6DB7AA008656FA /* TouchdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85AF3A2B6DB7AA008656FA /* TouchdownApp.swift */; };
 		AA85AF3D2B6DB7AA008656FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85AF3C2B6DB7AA008656FA /* ContentView.swift */; };
 		AA85AF3F2B6DB7AC008656FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA85AF3E2B6DB7AC008656FA /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 		AA100C292B72FF00007850F1 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		AA100C2B2B72FFC6007850F1 /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
 		AA100C2D2B73003A007850F1 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		AA100C2F2B7301B0007850F1 /* ImageSliderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderItemView.swift; sourceTree = "<group>"; };
+		AA100C312B73065D007850F1 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		AA100C332B730821007850F1 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		AA100C362B730A50007850F1 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		AA85AF372B6DB7AA008656FA /* Touchdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touchdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA85AF3A2B6DB7AA008656FA /* TouchdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchdownApp.swift; sourceTree = "<group>"; };
 		AA85AF3C2B6DB7AA008656FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +69,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA100C352B730A30007850F1 /* CategoryGrid */ = {
+			isa = PBXGroup;
+			children = (
+				AA100C312B73065D007850F1 /* CategoryItemView.swift */,
+				AA100C332B730821007850F1 /* CategoryGridView.swift */,
+				AA100C362B730A50007850F1 /* SectionView.swift */,
+			);
+			path = CategoryGrid;
+			sourceTree = "<group>";
+		};
+		AA100C382B730A61007850F1 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				AA100C1F2B71CFDA007850F1 /* NavigationBarView.swift */,
+				AA100C212B71D265007850F1 /* LogoView.swift */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		AA100C392B730A76007850F1 /* SliderView */ = {
+			isa = PBXGroup;
+			children = (
+				AA100C232B72FC61007850F1 /* ImageSliderView.swift */,
+				AA100C2F2B7301B0007850F1 /* ImageSliderItemView.swift */,
+			);
+			path = SliderView;
+			sourceTree = "<group>";
+		};
+		AA100C3A2B730A82007850F1 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				AA85AF5B2B70481D008656FA /* FooterView.swift */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
 		AA85AF2E2B6DB7AA008656FA = {
 			isa = PBXGroup;
 			children = (
@@ -133,10 +177,10 @@
 		AA85AF542B6DBE85008656FA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				AA85AF5B2B70481D008656FA /* FooterView.swift */,
-				AA100C1F2B71CFDA007850F1 /* NavigationBarView.swift */,
-				AA100C212B71D265007850F1 /* LogoView.swift */,
-				AA100C232B72FC61007850F1 /* ImageSliderView.swift */,
+				AA100C3A2B730A82007850F1 /* FooterView */,
+				AA100C392B730A76007850F1 /* SliderView */,
+				AA100C382B730A61007850F1 /* NavigationView */,
+				AA100C352B730A30007850F1 /* CategoryGrid */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -252,12 +296,16 @@
 				AA85AF3D2B6DB7AA008656FA /* ContentView.swift in Sources */,
 				AA100C2C2B72FFC6007850F1 /* BrandModel.swift in Sources */,
 				AA100C222B71D265007850F1 /* LogoView.swift in Sources */,
+				AA100C342B730821007850F1 /* CategoryGridView.swift in Sources */,
+				AA100C322B73065D007850F1 /* CategoryItemView.swift in Sources */,
 				AA100C262B72FC9A007850F1 /* PlayerModel.swift in Sources */,
 				AA100C2A2B72FF00007850F1 /* CategoryModel.swift in Sources */,
 				AA85AF5C2B70481D008656FA /* FooterView.swift in Sources */,
 				AA85AF3B2B6DB7AA008656FA /* TouchdownApp.swift in Sources */,
 				AA100C2E2B73003A007850F1 /* ProductModel.swift in Sources */,
 				AA85AF5A2B6DBEE9008656FA /* Constant.swift in Sources */,
+				AA100C302B7301B0007850F1 /* ImageSliderItemView.swift in Sources */,
+				AA100C372B730A50007850F1 /* SectionView.swift in Sources */,
 				AA100C202B71CFDA007850F1 /* NavigationBarView.swift in Sources */,
 				AA100C242B72FC61007850F1 /* ImageSliderView.swift in Sources */,
 				AA100C282B72FCEA007850F1 /* CodableBundleExtension.swift in Sources */,
