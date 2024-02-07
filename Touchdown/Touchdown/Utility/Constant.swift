@@ -8,8 +8,13 @@
 import SwiftUI
 
 // MARK: - DATA
-// MARK: - COLOR
+let players: [PlayerModel] = Bundle.main.decode([PlayerModel].self, from: "player.json")
+let categories: [CategoryModel] = Bundle.main.decode([CategoryModel].self, from: "category.json")
+let brands: [BrandModel] = Bundle.main.decode([BrandModel].self, from: "brand.json")
+let products: [ProductModel] = Bundle.main.decode([ProductModel].self, from: "product.json")
 
+
+// MARK: - COLOR
 let colorBackground: Color = Color("ColorBackground")
 let colorGray: Color = Color(UIColor.systemGray4)
 
