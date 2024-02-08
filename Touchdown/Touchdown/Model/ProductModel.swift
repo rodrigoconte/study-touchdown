@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ProductModel: Codable, Identifiable {
     let id: Int
@@ -13,4 +14,12 @@ struct ProductModel: Codable, Identifiable {
     let price: Int
     let description: String
     let color: [Double]
+    
+    var rgbColor: Color {
+        return Color(red: color[0], green: color[1], blue: color[2])
+    }
+    
+    var formattedPrice: String {
+        return "$\(price)"
+    }
 }

@@ -30,6 +30,11 @@ struct ContentView: View {
                             
                             CategoryGridView(categories: categories)
                             
+                            TitleView(title: "Helmets")
+                            
+                            ProductGridView(products: products)
+                                .padding()
+                            
                             FooterView()
                                 .padding()
                         }// - VStack
