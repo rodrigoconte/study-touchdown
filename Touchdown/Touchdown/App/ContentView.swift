@@ -25,16 +25,23 @@ struct ContentView: View {
                     
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack(spacing: 0) {
+                            // MARK: - CARROUSEL SECTION
                             ImageSliderView(players: players)
                                 .padding(.vertical, 10)
                             
+                            // MARK: - CATEGORY SECTION
                             CategoryGridView(categories: categories)
                             
+                            // MARK: - HELMETS SECTION
                             TitleView(title: "Helmets")
-                            
                             ProductGridView(products: products)
                                 .padding()
                             
+                            // MARK: - BRANDS SECTION
+                            TitleView(title: "Brands")
+                            BrandGridView(brands: brands)
+                            
+                            // MARK: - FOOTER
                             FooterView()
                                 .padding()
                         }// - VStack
