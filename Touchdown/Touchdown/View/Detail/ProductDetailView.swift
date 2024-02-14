@@ -33,6 +33,10 @@ struct ProductDetailView: View {
                 // MARK: - DETAIL BOTTOM PART
                 VStack(alignment: .center, spacing: 0, content: {
                     // MARK: - RATINGS + SIZES
+                    RatingsSizesDetailView()
+                        .padding(.top, -25)
+                        .padding(.bottom, 10)
+                    
                     // MARK: - DESCRIPTION
                     ScrollView(.vertical, showsIndicators: false) {
                         Text(product.description)
@@ -40,8 +44,15 @@ struct ProductDetailView: View {
                             .foregroundStyle(.gray)
                             .multilineTextAlignment(.leading)
                     }//: SCROLL
+                    
                     // MARK: - QUANTITY + FAVOURITE
+                    QuantityFavouriteDetailView()
+                        .padding(.vertical, 10)
+                    
                     // MARK: - ADD TO CART
+                    AddToCartDetailView(product: product)
+                        .padding(.bottom, 20)
+                    
                     Spacer()
                 })//: VSTACK
                 .padding(.horizontal)
